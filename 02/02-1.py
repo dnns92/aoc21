@@ -29,8 +29,7 @@ class Position:
 
 
 if __name__ == "__main__":
-    text_input = read_lines_as_text("02/input.txt")
-    # text_input = read_lines_as_text("02/test_input.txt")
+    text_input = read_lines_as_text(in_file)
     course = []
     for line in text_input:
         course.append(line.split(" "))
