@@ -12,3 +12,7 @@ def read_lines_as_int(file):
 def read_lines_as_float(file):
     text =  read_lines_as_text(file)
     return [float(i) for i in text]
+
+def read_lines_as_text_raw(file):
+    input_text = open(file, "r").read()
+    return input_text
