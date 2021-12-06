@@ -3,3 +3,4 @@
 */test_input.txt
 *.pyc
 __pycache__/*
+cookie.txt
