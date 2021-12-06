@@ -14,11 +14,5 @@ if __name__ == "__main__":
         sum_ = sum(rest[idx:idx+window_size])
         if (prev < sum_):
             increments += 1
-            print(sum_, "(increased)")
-        elif (prev == sum_):
-            print(sum_, "(no change)")
-        else:
-            print(sum_, "(decreased)")
         prev = sum_
     print("1-2:", increments)
-

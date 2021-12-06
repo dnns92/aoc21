@@ -34,11 +34,7 @@ class Position:
 
 if __name__ == "__main__":
     text_input = read_lines_as_text(in_file)
-    course = []
-    for line in text_input:
-        course.append(line.split(" "))
-    print(course[0:10])
-
+    course = [line.split(" ") for line in text_input]
     pos = Position()
     for instruction in course:
         pos.add(instruction[0], int(instruction[1]))

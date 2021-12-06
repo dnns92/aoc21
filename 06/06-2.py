@@ -1,6 +1,6 @@
 import sys
 sys.path.append("/mnt/wsl/")
-from aoc21.utils import read_line_as_comma_list
+from aoc21.utils import read_line_as_integer_list
 
 TESTING = False
 
@@ -35,7 +35,7 @@ else:
     in_file = "/mnt/wsl/aoc21/06/input.txt"
 
 if __name__ == "__main__":
-    txt = read_line_as_comma_list(in_file)
+    txt = read_line_as_integer_list(in_file)
 
     fl = FishList()
     fl.initialize(txt)
