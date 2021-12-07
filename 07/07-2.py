@@ -11,7 +11,7 @@ else:
 
 
 def calc_oil_usage(pos, target):
-    return sum(range(1, abs(target-pos) + 1))
+    return (abs(target-pos) * (abs(target-pos) + 1)) / 2
     
 
 if __name__ == "__main__":
@@ -24,4 +24,4 @@ if __name__ == "__main__":
             sum_+= calc_oil_usage(position, target_position)
         if smallest == -1 or sum_ < smallest:
             smallest = sum_
-    print("7-2", smallest)
+    print("7-2", int(smallest))
