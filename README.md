@@ -2,7 +2,7 @@
 I'll try to solve AOC21 without extra libraries like numpy.
 Clean Code and Big O Notation are completely disregarded. ;)
 
-##Libraries I allow myself to use from the python standard-libraries:
+## Libraries used
 ```
  - re (regex)
  - sys (syscalls, to make import life easier)
