@@ -23,6 +23,11 @@ def read_line_as_integer_list(file):
     input_text = open(file, "r").read()
     return [int(i) for i in input_text.split(",")]
 
+def print_list_pretty(mat):
+    print("\n")
+    for row in mat:
+        print(row)
+
 ############################## MATH UTILS ##############################
 def calc_median(x):
     x = sorted(x)

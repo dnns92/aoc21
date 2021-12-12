@@ -50,7 +50,7 @@ def walk(mat):
 
 if __name__ == "__main__":
     levels = [list(map(int, line.strip())) for line in read_lines_as_text(in_file)]
-    for i in range(20000):
+    while True:
         levels = inrease(levels)
         for _ in range(1000):
             levels = walk(levels)
